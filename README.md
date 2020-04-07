@@ -1,2 +1,7 @@
-# apache-php-base
-Apache + PHP Base Image
+# Apache + PHP Base Image
+Basically php-apache with some added PHP capabilities:
+
+* apcu
+* gmp
+* pdo
+* pgsql
