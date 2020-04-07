@@ -9,9 +9,9 @@ RUN apt-get update && apt-get install -y \
 RUN pecl install \
   apcu-5.1.18 \
   && docker-php-ext-enable \
-  apcu \
-  gmp
+  apcu
 RUN docker-php-ext-install \
+  gmp \
   pdo \
   pdo_pgsql \
   pgsql
