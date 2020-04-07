@@ -1,7 +1,7 @@
 FROM php:7.4-apache
 MAINTAINER Sebastian Stenzel <sebastian.stenzel@skymatic.de>
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install --no-install-recommends -y \
   libgmp-dev \
   libpq-dev \
   unzip \
