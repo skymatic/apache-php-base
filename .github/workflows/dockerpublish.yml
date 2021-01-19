@@ -2,7 +2,7 @@ name: Docker
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     tags: [ ]
 
 env:
@@ -31,7 +31,7 @@ jobs:
         run: |
           IMAGE_ID=$REPO_NAME/$IMAGE_NAME
           VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
-          [ "$VERSION" == "master" ] && VERSION=latest
+          [ "$VERSION" == "main" ] && VERSION=latest
 
           echo VERSION=$VERSION
 
