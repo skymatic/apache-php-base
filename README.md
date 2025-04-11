@@ -3,3 +3,5 @@ Basically php-apache with some added PHP capabilities:
 
 * apcu
 * gmp
+* pdo
+* pgsql
